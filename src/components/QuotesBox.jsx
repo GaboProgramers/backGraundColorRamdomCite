@@ -1,13 +1,10 @@
 import React from 'react'
+import BtnNextCite from './BtnNextCite'
 
 const QuotesBox = ({ quoteRamdom, handleClick, colorRamdom }) => {
 
     const objColor = {
         color: colorRamdom
-    }
-
-    const objColorBtn = {
-        backgroundColor: colorRamdom
     }
 
     return (
@@ -19,7 +16,10 @@ const QuotesBox = ({ quoteRamdom, handleClick, colorRamdom }) => {
                 </p>
             </div>
             <h1 className='card__author'>{quoteRamdom.author}</h1>
-            <button style={objColorBtn} className='btn' onClick={handleClick}><i className='bx bx-chevron-right icon'></i></button>
+            <BtnNextCite
+                handleClick={handleClick}
+                colorRamdom={colorRamdom}
+            />
         </article>
     )
 }

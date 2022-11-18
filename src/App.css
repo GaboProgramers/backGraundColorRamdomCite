@@ -25,14 +25,8 @@
     box-shadow: 3px 5px 16px -1px rgba(0, 0, 0, 0.75);
     background-color: #fff;
     border-radius: 20px;
+    font-weight: bold;
 }
-
-/* .paragraph {
-    display: flex;
-    gap: 1rem;
-    font-size: 17px;
-    text-align: right;
-} */
 
 .paragraph .bxs-quote-left {
     font-size: 30px;
