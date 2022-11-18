@@ -9,8 +9,8 @@ const QuotesBox = ({ quoteRamdom, handleClick, colorRamdom }) => {
 
     return (
         <article className='card' style={objColor}>
-            <div className="paragraph">
-                <i className='bx bxs-quote-left'></i>
+            <div className="card__paragraph">
+                <i className='bx bxs-quote-left icon__left'></i>
                 <p>
                     {quoteRamdom.quote}
                 </p>
@@ -19,7 +19,7 @@ const QuotesBox = ({ quoteRamdom, handleClick, colorRamdom }) => {
             <BtnNextCite
                 handleClick={handleClick}
                 colorRamdom={colorRamdom}
-            />
+            /> {/* Componente del button para cambio ramdom de cita */}
         </article>
     )
 }

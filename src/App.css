@@ -1,10 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-}
-
 .App {
     width: 100%;
     display: flex;
@@ -28,9 +21,10 @@
     font-weight: bold;
 }
 
-.paragraph .bxs-quote-left {
+.card__paragraph .icon__left {
     font-size: 30px;
     float: left;
+    margin-right: 5px;
 }
 
 .card__author {
@@ -52,7 +46,7 @@
     transform: scale(1.05);
 }
 
-.btn i {
+.btn .icon {
     font-size: 25px;
     color: #fff;
 }
