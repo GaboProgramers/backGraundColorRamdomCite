@@ -32,6 +32,7 @@ function App() {
         quoteRamdom={quoteRamdom}
         handleClick={handleClick}
         colorRamdom={colorRamdom}
+        quote={quotes}
       />
     </div>
   )

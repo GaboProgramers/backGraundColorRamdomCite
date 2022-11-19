@@ -1,7 +1,8 @@
 import React from 'react'
 import BtnNextCite from './BtnNextCite'
+import ParagraphQuote from './ParagraphQuote'
 
-const QuotesBox = ({ quoteRamdom, handleClick, colorRamdom }) => {
+const QuotesBox = ({ quoteRamdom, handleClick, colorRamdom, quotes }) => {
 
     const objColor = {
         color: colorRamdom
@@ -9,13 +10,10 @@ const QuotesBox = ({ quoteRamdom, handleClick, colorRamdom }) => {
 
     return (
         <article className='card' style={objColor}>
-            <div className="card__paragraph">
-                <i className='bx bxs-quote-left icon__left'></i>
-                <p>
-                    {quoteRamdom.quote}
-                </p>
-            </div>
-            <h1 className='card__author'>{quoteRamdom.author}</h1>
+            <ParagraphQuote
+                quoteRamdom={quoteRamdom}
+                quote={quotes}
+            />
             <BtnNextCite
                 handleClick={handleClick}
                 colorRamdom={colorRamdom}
